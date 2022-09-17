@@ -1,0 +1,3 @@
+/home/fabio/pico/course-rp2040-examples/hello_rp2040/build/pioasm/CMakeFiles/pioasm.dir
+/home/fabio/pico/course-rp2040-examples/hello_rp2040/build/pioasm/CMakeFiles/edit_cache.dir
+/home/fabio/pico/course-rp2040-examples/hello_rp2040/build/pioasm/CMakeFiles/rebuild_cache.dir
