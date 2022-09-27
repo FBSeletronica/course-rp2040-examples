@@ -1,3 +1,14 @@
+/**
+ * @file gpio_input_masked.c
+ * @author Fabio Souza (contato@fabiosouza.org)
+ * @brief Exemplo para exibir a leitura e acionamento de varios pinos ao mesmo tempo
+ * @version 0.1
+ * @date 2022-09-25
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
 #include <stdio.h>
 #include "pico/stdlib.h"
 
