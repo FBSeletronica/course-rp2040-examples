@@ -15,8 +15,8 @@
 
 // Definição dos pinos e canal I2C
 #define I2C_ID        i2c0
-#define I2C_SCL_PIN   17
-#define I2C_SDA_PIN   16
+#define I2C_SCL_PIN   PICO_DEFAULT_I2C_SCL_PIN
+#define I2C_SDA_PIN   PICO_DEFAULT_I2C_SDA_PIN
 
 // Definição para configuração da I2C
 #define BAUD_RATE 100000   // standard 100KHz
