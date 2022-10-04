@@ -49,7 +49,7 @@ int tabela_digito[] = {
      0b01011011,    //3   
 
 };
--
+
 // função principal
 int main()
 {
