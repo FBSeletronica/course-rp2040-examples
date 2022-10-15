@@ -42,7 +42,6 @@ int main() {
 
     while(1);
     
-
     #else
     //configuração do GPIO
     gpio_set_function(PWM_OUT_1, GPIO_FUNC_PWM);        //Seleciona PWM para o pino do LED
@@ -52,8 +51,7 @@ int main() {
     //cofiguração do PWM
     uint32_t wrap = pwm_set_freq_duty(slice_num, chan, 100, 50);
     pwm_set_enabled(slice_num,true);                    //habilita PWM
-
-    while(1);        
+      
 
     while (1){
         uint32_t i;
