@@ -1,5 +1,5 @@
 /**
- * @file pwm_generator.c
+ * @file pwm.c
  * @author Fabio Souza (contato@fabiosouza.org)
  * @brief Exemplo para configuração do PWM com dois canais idependentes no mesmo Slice
  * @version 0.1
@@ -25,6 +25,7 @@ uint32_t pwm_set_freq_duty(uint slice_num, uint chan, uint32_t f, int d){
     pwm_set_clkdiv_int_frac(slice_num,divisor16/16,divisor16&0xF);
     pwm_set_wrap(slice_num,wrap);
     pwm_set_chan_level(slice_num,chan,wrap*d/100);
+    return wrap;
 }
 
 uint32_t pwm_get_wrap(uint slice_num){
@@ -57,6 +58,5 @@ int main() {
             pwm_set_duty(slice_num,chan_out1,100-i);
             sleep_ms(100);
         }
-        sleep_ms(1000);
     }
 }
