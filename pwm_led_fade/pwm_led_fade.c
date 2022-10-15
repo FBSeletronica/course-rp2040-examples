@@ -1,9 +1,9 @@
 /**
- * @file pwm_generator.c
+ * @file pwm_led_fade.c
  * @author Fabio Souza (contato@fabiosouza.org)
  * @brief Exemplo para fazer um efito fade em um led 
- *        Aumenta o briloo até 100% depois reduz o brillho até 0%. 
- *        O controle do incremento do brilho é feito na rotina de interrupção do PWM
+ *        Aumenta o brilho até 100% depois reduz o brillho até 0%. 
+ *        O controle do brilho é feito na rotina de interrupção do PWM
  * @version 0.1
  * @date 2022-10-01
  * 
@@ -59,7 +59,7 @@ int main() {
 
     //cofiguração do PWM
     pwm_config config = pwm_get_default_config();  //configuração padrão - Feee Running, (0 to 2**16-1)
-    pwm_config_set_clkdiv(&config, 4.f);           //configura o clock
+    pwm_config_set_clkdiv(&config, 4.f);           //configura o clock f = 125000000/65535/4 = 476Hz
     pwm_init(slice_num, &config, true);            //inicia PWM
 
     while (1)
